@@ -1,0 +1,23 @@
+{
+    "name": "php-baremetal/led-sk6812",
+    "description": "SK6812 addressable RGBW LED driver for ext-led (Baremetal\\Led\\Driver\\Sk6812).",
+    "type": "bm-lib",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gianfrancesco Aurecchia",
+            "email": "gianfri@aurecchia.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.3",
+        "php-baremetal/ext-led": "^1.0"
+    },
+    "extra": {
+        "baremetal": {
+            "register": {
+                "led_drivers": ["sk6812_driver_desc"]
+            }
+        }
+    }
+}
